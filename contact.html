@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Panaderia artesanal en Argentina">
+<meta name="keywords" content="panaderia,artesanal,pasteleria,Argentina">
+<meta property="og:title" content="Contacto — Test Panaderia Don Jorge">
+<meta property="og:description" content="Panaderia artesanal en Argentina">
+<meta property="og:image" content="https://source.unsplash.com/1920x900/?bakery%2Cfood%2Cdesserts">
+<title>Contacto — Test Panaderia Don Jorge</title>
+<link rel="preconnect" href="https://source.unsplash.com">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;color:#1e293b;background:#fff;line-height:1.65}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%;height:100%;object-fit:cover}
+h1,h2,h3,h4{line-height:1.15;font-weight:800}
+.wrap{max-width:1200px;margin:0 auto;padding:0 1.5rem}
+.sec{padding:5.5rem 0}
+.sec-sm{padding:3rem 0}
+.badge{display:inline-flex;align-items:center;gap:.4rem;background:rgba(139,69,19,0.1);color:#8B4513;
+  font-weight:700;font-size:.75rem;text-transform:uppercase;letter-spacing:.1em;
+  padding:.35rem 1rem;border-radius:9999px;margin-bottom:1.25rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;
+  font-weight:700;font-size:1rem;padding:.875rem 2rem;border-radius:9999px;
+  cursor:pointer;transition:opacity .2s,transform .15s;border:none;line-height:1;white-space:nowrap}
+.btn:hover{opacity:.9;transform:translateY(-2px)}
+.btn-p{background:#8B4513;color:#fff}
+.btn-o{background:transparent;color:#8B4513;border:2px solid #8B4513}
+.btn-w{background:#fff;color:#8B4513}
+.card{background:#fff;border-radius:1.25rem;padding:2rem;
+  border:1px solid #e8edf3;transition:box-shadow .25s,transform .25s}
+.card:hover{box-shadow:0 12px 40px rgba(0,0,0,.09);transform:translateY(-3px)}
+.tc{text-align:center}
+.stitle{font-size:clamp(1.8rem,3.5vw,2.6rem);color:#0f172a;margin-bottom:.75rem}
+.ssub{font-size:1.05rem;color:#64748b;max-width:580px;margin:0 auto;line-height:1.7}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.g4{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem}
+.g2x3{display:grid;grid-template-columns:repeat(2,1fr);gap:1.25rem}
+@media(max-width:960px){.g2{grid-template-columns:1fr;gap:2.5rem}.g3{grid-template-columns:1fr 1fr}.g4{grid-template-columns:1fr 1fr}}
+@media(max-width:640px){.g3,.g4,.g2x3{grid-template-columns:1fr}.sec{padding:3.5rem 0}.btn{padding:.75rem 1.5rem;font-size:.95rem}}
+/* FAQ */
+.faq-item{border-bottom:1px solid #e8edf3}
+.faq-btn{display:flex;justify-content:space-between;align-items:center;width:100%;background:none;border:none;text-align:left;padding:1.25rem 0;cursor:pointer;font-size:1rem;font-weight:600;color:#0f172a;gap:1rem}
+.faq-btn .ico{flex-shrink:0;width:24px;height:24px;border-radius:50%;background:rgba(139,69,19,0.1);color:#8B4513;display:flex;align-items:center;justify-content:center;font-size:1rem;transition:transform .3s}
+.faq-body{max-height:0;overflow:hidden;transition:max-height .35s ease,padding .35s ease}
+.faq-body p{color:#475569;line-height:1.75;font-size:.95rem;padding-bottom:1.25rem}
+.faq-item.open .ico{transform:rotate(45deg)}
+.faq-item.open .faq-body{max-height:300px}
+/* GALLERY */
+.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:auto auto;gap:.75rem}
+.gallery-grid img{width:100%;height:240px;object-fit:cover;border-radius:.875rem;transition:opacity .25s}
+.gallery-grid img:hover{opacity:.9}
+@media(max-width:640px){.gallery-grid{grid-template-columns:1fr 1fr}}
+/* Mobile nav */
+#m-nav{display:none;padding:1rem 1.5rem;flex-direction:column;gap:.25rem;background:#fff;border-top:1px solid #e8edf3}
+#m-nav a{display:block;padding:.75rem 1rem;border-radius:.625rem;font-weight:500;color:#0f172a}
+@media(max-width:768px){#hamburger{display:flex !important}.desktop-links{display:none !important}#m-nav.open{display:flex!important}}
+</style>
+
+</head><body>
+<nav style="position:sticky;top:0;z-index:100;background:rgba(255,255,255,.95);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid rgba(0,0,0,.06)">
+  <div class="wrap" style="display:flex;align-items:center;justify-content:space-between;height:70px">
+    <a href="index.html" style="font-size:1.2rem;font-weight:800;color:#8B4513;letter-spacing:-.02em">Test Panaderia Don Jorge</a>
+    <div class="desktop-links" style="display:flex;align-items:center;gap:.125rem">
+      <a href="index.html" style="color:#475569;font-size:.875rem;padding:.5rem .875rem;border-radius:.5rem;font-weight:500;transition:color .2s,background .2s" onmouseover="this.style.background='rgba(139,69,19,0.1)';this.style.color='#8B4513'" onmouseout="this.style.background='';this.style.color='#475569'">Inicio</a><a href="services.html" style="color:#475569;font-size:.875rem;padding:.5rem .875rem;border-radius:.5rem;font-weight:500;transition:color .2s,background .2s" onmouseover="this.style.background='rgba(139,69,19,0.1)';this.style.color='#8B4513'" onmouseout="this.style.background='';this.style.color='#475569'">Servicios</a><a href="gallery.html" style="color:#475569;font-size:.875rem;padding:.5rem .875rem;border-radius:.5rem;font-weight:500;transition:color .2s,background .2s" onmouseover="this.style.background='rgba(139,69,19,0.1)';this.style.color='#8B4513'" onmouseout="this.style.background='';this.style.color='#475569'">Galería</a><a href="about.html" style="color:#475569;font-size:.875rem;padding:.5rem .875rem;border-radius:.5rem;font-weight:500;transition:color .2s,background .2s" onmouseover="this.style.background='rgba(139,69,19,0.1)';this.style.color='#8B4513'" onmouseout="this.style.background='';this.style.color='#475569'">Nosotros</a><a href="faq.html" style="color:#475569;font-size:.875rem;padding:.5rem .875rem;border-radius:.5rem;font-weight:500;transition:color .2s,background .2s" onmouseover="this.style.background='rgba(139,69,19,0.1)';this.style.color='#8B4513'" onmouseout="this.style.background='';this.style.color='#475569'">FAQ</a><a href="contact.html" class="btn btn-p" style="padding:.5rem 1.25rem;font-size:.875rem">Contacto</a>
+    </div>
+    <button id="hamburger" onclick="document.getElementById('m-nav').classList.toggle('open')"
+      style="display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:.5rem" aria-label="Menú">
+      <span style="display:block;width:22px;height:2px;background:#1e293b;border-radius:2px;transition:transform .3s"></span>
+      <span style="display:block;width:22px;height:2px;background:#1e293b;border-radius:2px;transition:opacity .3s"></span>
+      <span style="display:block;width:22px;height:2px;background:#1e293b;border-radius:2px;transition:transform .3s"></span>
+    </button>
+  </div>
+  <div id="m-nav">
+    <a href="index.html">Inicio</a><a href="services.html">Servicios</a><a href="gallery.html">Galería</a><a href="about.html">Nosotros</a><a href="faq.html">FAQ</a><a href="contact.html" style="background:#8B4513;color:#fff;text-align:center;border-radius:.625rem;padding:.875rem">Contacto</a>
+  </div>
+</nav>
+
+<section style="background:linear-gradient(135deg,rgba(139,69,19,0.1),#f8fafc);padding:5rem 0;border-bottom:1px solid #e8edf3">
+  <div class="wrap tc" style="max-width:680px">
+    <div class="badge">✦ Contacto</div>
+    <h1 class="stitle">Hablemos</h1>
+    <p class="ssub">¿Tienes alguna pregunta o necesitas ayuda? ¡No dudes en contactarnos!</p>
+  </div>
+</section>
+
+<section class="sec" style="background:#fff">
+  <div class="wrap">
+    <div class="g2" style="gap:3rem">
+
+      <!-- Info -->
+      <div>
+        <h2 style="font-size:1.5rem;font-weight:800;color:#0f172a;margin-bottom:2rem">Información de contacto</h2>
+        
+        <div style="display:flex;align-items:flex-start;gap:1rem;margin-bottom:1.5rem">
+          <div style="width:44px;height:44px;background:rgba(139,69,19,0.1);border-radius:.75rem;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1.25rem">📞</div>
+          <div><p style="font-weight:700;color:#0f172a;font-size:.85rem;margin-bottom:.25rem">Teléfono</p><a href="tel:+541155551234" style="color:#475569;font-size:1rem">+541155551234</a></div>
+        </div>
+        
+        <div style="display:flex;align-items:flex-start;gap:1rem;margin-bottom:1.5rem">
+          <div style="width:44px;height:44px;background:rgba(139,69,19,0.1);border-radius:.75rem;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1.25rem">✉️</div>
+          <div><p style="font-weight:700;color:#0f172a;font-size:.85rem;margin-bottom:.25rem">Email</p><a href="mailto:test@automaticialab.com" style="color:#475569;font-size:1rem">test@automaticialab.com</a></div>
+        </div>
+        
+        <div style="display:flex;align-items:flex-start;gap:1rem;margin-bottom:2rem">
+          <div style="width:44px;height:44px;background:rgba(139,69,19,0.1);border-radius:.75rem;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1.25rem">📍</div>
+          <div><p style="font-weight:700;color:#0f172a;font-size:.85rem;margin-bottom:.25rem">Dirección</p><p style="color:#475569;font-size:1rem">Av. Corrientes 1234, Buenos Aires</p></div>
+        </div>
+        
+        <a href="https://wa.me/541155551234" style="display:inline-flex;align-items:center;gap:.75rem;background:#25D366;color:#fff;padding:1rem 1.75rem;border-radius:9999px;font-weight:700;font-size:1rem;transition:opacity .2s" onmouseover="this.style.opacity='.9'" onmouseout="this.style.opacity='1'">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Escribir por WhatsApp
+        </a>
+      </div>
+
+      <!-- Form -->
+      <div style="background:#f8fafc;border-radius:1.5rem;padding:2.5rem;border:1px solid #e8edf3" id="contact-box">
+        <h3 style="font-size:1.25rem;font-weight:700;color:#0f172a;margin-bottom:1.75rem">Envianos un mensaje</h3>
+        <form id="contact-form" onsubmit="submitForm(event)">
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem">
+            <div>
+              <label style="display:block;font-weight:600;font-size:.875rem;color:#0f172a;margin-bottom:.375rem">Nombre *</label>
+              <input name="name" required placeholder="Tu nombre" style="width:100%;border:1.5px solid #e8edf3;border-radius:.625rem;padding:.75rem 1rem;font-size:.9rem;outline:none;transition:border .2s;background:#fff" onfocus="this.style.borderColor='#8B4513'" onblur="this.style.borderColor='#e8edf3'">
+            </div>
+            <div>
+              <label style="display:block;font-weight:600;font-size:.875rem;color:#0f172a;margin-bottom:.375rem">Email *</label>
+              <input name="email" type="email" required placeholder="tu@email.com" style="width:100%;border:1.5px solid #e8edf3;border-radius:.625rem;padding:.75rem 1rem;font-size:.9rem;outline:none;transition:border .2s;background:#fff" onfocus="this.style.borderColor='#8B4513'" onblur="this.style.borderColor='#e8edf3'">
+            </div>
+          </div>
+          
+          <div style="margin-bottom:1rem">
+            <label style="display:block;font-weight:600;font-size:.875rem;color:#0f172a;margin-bottom:.375rem">Teléfono</label>
+            <input name="tel" type="tel" placeholder="Tu número" style="width:100%;border:1.5px solid #e8edf3;border-radius:.625rem;padding:.75rem 1rem;font-size:.9rem;outline:none;transition:border .2s;background:#fff" onfocus="this.style.borderColor='#8B4513'" onblur="this.style.borderColor='#e8edf3'">
+          </div>
+          <div style="margin-bottom:1.5rem">
+            <label style="display:block;font-weight:600;font-size:.875rem;color:#0f172a;margin-bottom:.375rem">Mensaje *</label>
+            <textarea name="msg" required rows="4" placeholder="¿En qué podemos ayudarte?" style="width:100%;border:1.5px solid #e8edf3;border-radius:.625rem;padding:.75rem 1rem;font-size:.9rem;outline:none;resize:vertical;transition:border .2s;background:#fff;font-family:inherit" onfocus="this.style.borderColor='#8B4513'" onblur="this.style.borderColor='#e8edf3'"></textarea>
+          </div>
+          <button type="submit" id="submit-btn" style="width:100%;background:#8B4513;color:#fff;padding:1rem;border-radius:.75rem;border:none;font-weight:700;font-size:1rem;cursor:pointer;transition:opacity .2s">
+            Enviar mensaje →
+          </button>
+        </form>
+        <div id="contact-success" style="display:none;text-align:center;padding:2.5rem 1rem">
+          <div style="font-size:3.5rem;margin-bottom:1rem">✅</div>
+          <h3 style="font-size:1.3rem;font-weight:800;color:#0f172a;margin-bottom:.5rem">¡Mensaje enviado!</h3>
+          <p style="color:#64748b">Te respondemos a la brevedad.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script>
+function submitForm(e) {
+  e.preventDefault();
+  const btn = document.getElementById('submit-btn');
+  btn.textContent = 'Enviando...';
+  btn.disabled = true;
+  // Simulación de envío — reemplazar con endpoint real si se desea
+  setTimeout(() => {
+    document.getElementById('contact-form').style.display = 'none';
+    document.getElementById('contact-success').style.display = 'block';
+  }, 1200);
+}
+</script>
+
+<footer style="background:#0b1120;color:#94a3b8;padding:4.5rem 0 2rem">
+  <div class="wrap">
+    <div style="display:grid;grid-template-columns:2fr 1fr 1fr;gap:3rem;padding-bottom:3rem;border-bottom:1px solid rgba(255,255,255,.07)">
+      <div>
+        <p style="font-size:1.3rem;font-weight:800;color:#8B4513;margin-bottom:.875rem">Test Panaderia Don Jorge</p>
+        <p style="font-size:.9rem;line-height:1.75;max-width:300px;margin-bottom:1.5rem">Panaderia artesanal en Argentina</p>
+        <a href="https://wa.me/541155551234" class="btn" style="background:#25D366;color:#fff;padding:.625rem 1.25rem;font-size:.875rem">💬 WhatsApp</a>
+      </div>
+      <div>
+        <p style="font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#475569;margin-bottom:1rem">Páginas</p>
+        <a href="index.html" style="display:block;color:#94a3b8;font-size:.875rem;margin-bottom:.5rem;transition:color .2s" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#94a3b8'">Inicio</a><a href="services.html" style="display:block;color:#94a3b8;font-size:.875rem;margin-bottom:.5rem;transition:color .2s" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#94a3b8'">Servicios</a><a href="gallery.html" style="display:block;color:#94a3b8;font-size:.875rem;margin-bottom:.5rem;transition:color .2s" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#94a3b8'">Galería</a><a href="about.html" style="display:block;color:#94a3b8;font-size:.875rem;margin-bottom:.5rem;transition:color .2s" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#94a3b8'">Nosotros</a><a href="faq.html" style="display:block;color:#94a3b8;font-size:.875rem;margin-bottom:.5rem;transition:color .2s" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#94a3b8'">FAQ</a><a href="contact.html" style="display:block;color:#94a3b8;font-size:.875rem;margin-bottom:.5rem;transition:color .2s" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#94a3b8'">Contacto</a>
+      </div>
+      <div>
+        <p style="font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#475569;margin-bottom:1rem">Contacto</p>
+        <p style="font-size:.875rem;margin-bottom:.5rem">📞 +541155551234</p>
+        <p style="font-size:.875rem;margin-bottom:.5rem">✉️ test@automaticialab.com</p>
+        <p style="font-size:.875rem">📍 Av. Corrientes 1234, Buenos Aires</p>
+      </div>
+    </div>
+    <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;padding-top:1.5rem;font-size:.8rem">
+      <p>© 2026 Test Panaderia Don Jorge. Todos los derechos reservados.</p>
+      <p>Creado con IA por <a href="https://automaticialab.com" style="color:#8B4513">AUTOMATIC IA LAB</a></p>
+    </div>
+  </div>
+</footer>
+<script>
+// FAQ accordion
+document.querySelectorAll('.faq-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const item = btn.closest('.faq-item');
+    const wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    if (!wasOpen) item.classList.add('open');
+  });
+});
+</script></body></html>
