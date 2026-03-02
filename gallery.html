@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Panaderia artesanal en Argentina">
+<meta name="keywords" content="panaderia,artesanal,pasteleria,Argentina">
+<meta property="og:title" content="Galería — Test Panaderia Don Jorge">
+<meta property="og:description" content="Panaderia artesanal en Argentina">
+<meta property="og:image" content="https://source.unsplash.com/1920x900/?bakery%2Cfood%2Cdesserts">
+<title>Galería — Test Panaderia Don Jorge</title>
+<link rel="preconnect" href="https://source.unsplash.com">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;color:#1e293b;background:#fff;line-height:1.65}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%;height:100%;object-fit:cover}
+h1,h2,h3,h4{line-height:1.15;font-weight:800}
+.wrap{max-width:1200px;margin:0 auto;padding:0 1.5rem}
+.sec{padding:5.5rem 0}
+.sec-sm{padding:3rem 0}
+.badge{display:inline-flex;align-items:center;gap:.4rem;background:rgba(139,69,19,0.1);color:#8B4513;
+  font-weight:700;font-size:.75rem;text-transform:uppercase;letter-spacing:.1em;
+  padding:.35rem 1rem;border-radius:9999px;margin-bottom:1.25rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;
+  font-weight:700;font-size:1rem;padding:.875rem 2rem;border-radius:9999px;
+  cursor:pointer;transition:opacity .2s,transform .15s;border:none;line-height:1;white-space:nowrap}
+.btn:hover{opacity:.9;transform:translateY(-2px)}
+.btn-p{background:#8B4513;color:#fff}
+.btn-o{background:transparent;color:#8B4513;border:2px solid #8B4513}
+.btn-w{background:#fff;color:#8B4513}
+.card{background:#fff;border-radius:1.25rem;padding:2rem;
+  border:1px solid #e8edf3;transition:box-shadow .25s,transform .25s}
+.card:hover{box-shadow:0 12px 40px rgba(0,0,0,.09);transform:translateY(-3px)}
+.tc{text-align:center}
+.stitle{font-size:clamp(1.8rem,3.5vw,2.6rem);color:#0f172a;margin-bottom:.75rem}
+.ssub{font-size:1.05rem;color:#64748b;max-width:580px;margin:0 auto;line-height:1.7}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.g4{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem}
+.g2x3{display:grid;grid-template-columns:repeat(2,1fr);gap:1.25rem}
+@media(max-width:960px){.g2{grid-template-columns:1fr;gap:2.5rem}.g3{grid-template-columns:1fr 1fr}.g4{grid-template-columns:1fr 1fr}}
+@media(max-width:640px){.g3,.g4,.g2x3{grid-template-columns:1fr}.sec{padding:3.5rem 0}.btn{padding:.75rem 1.5rem;font-size:.95rem}}
+/* FAQ */
+.faq-item{border-bottom:1px solid #e8edf3}
+.faq-btn{display:flex;justify-content:space-between;align-items:center;width:100%;background:none;border:none;text-align:left;padding:1.25rem 0;cursor:pointer;font-size:1rem;font-weight:600;color:#0f172a;gap:1rem}
+.faq-btn .ico{flex-shrink:0;width:24px;height:24px;border-radius:50%;background:rgba(139,69,19,0.1);color:#8B4513;display:flex;align-items:center;justify-content:center;font-size:1rem;transition:transform .3s}
+.faq-body{max-height:0;overflow:hidden;transition:max-height .35s ease,padding .35s ease}
+.faq-body p{color:#475569;line-height:1.75;font-size:.95rem;padding-bottom:1.25rem}
+.faq-item.open .ico{transform:rotate(45deg)}
+.faq-item.open .faq-body{max-height:300px}
+/* GALLERY */
+.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:auto auto;gap:.75rem}
+.gallery-grid img{width:100%;height:240px;object-fit:cover;border-radius:.875rem;transition:opacity .25s}
+.gallery-grid img:hover{opacity:.9}
+@media(max-width:640px){.gallery-grid{grid-template-columns:1fr 1fr}}
+/* Mobile nav */
+#m-nav{display:none;padding:1rem 1.5rem;flex-direction:column;gap:.25rem;background:#fff;border-top:1px solid #e8edf3}
+#m-nav a{display:block;padding:.75rem 1rem;border-radius:.625rem;font-weight:500;color:#0f172a}
+@media(max-width:768px){#hamburger{display:flex !important}.desktop-links{display:none !important}#m-nav.open{display:flex!important}}
+</style>
+
+</head><body>
+<nav style="position:sticky;top:0;z-index:100;background:rgba(255,255,255,.95);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid rgba(0,0,0,.06)">
+  <div class="wrap" style="display:flex;align-items:center;justify-content:space-between;height:70px">
+    <a href="index.html" style="font-size:1.2rem;font-weight:800;color:#8B4513;letter-spacing:-.02em">Test Panaderia Don Jorge</a>
+    <div class="desktop-links" style="display:flex;align-items:center;gap:.125rem">
+      <a href="index.html" style="color:#475569;font-size:.875rem;padding:.5rem .875rem;border-radius:.5rem;font-weight:500;transition:color .2s,background .2s" onmouseover="this.style.background='rgba(139,69,19,0.1)';this.style.color='#8B4513'" onmouseout="this.style.background='';this.style.color='#475569'">Inicio</a><a href="services.html" style="color:#475569;font-size:.875rem;padding:.5rem .875rem;border-radius:.5rem;font-weight:500;transition:color .2s,background .2s" onmouseover="this.style.background='rgba(139,69,19,0.1)';this.style.color='#8B4513'" onmouseout="this.style.background='';this.style.color='#475569'">Servicios</a><a href="gallery.html" style="color:#475569;font-size:.875rem;padding:.5rem .875rem;border-radius:.5rem;font-weight:500;transition:color .2s,background .2s" onmouseover="this.style.background='rgba(139,69,19,0.1)';this.style.color='#8B4513'" onmouseout="this.style.background='';this.style.color='#475569'">Galería</a><a href="about.html" style="color:#475569;font-size:.875rem;padding:.5rem .875rem;border-radius:.5rem;font-weight:500;transition:color .2s,background .2s" onmouseover="this.style.background='rgba(139,69,19,0.1)';this.style.color='#8B4513'" onmouseout="this.style.background='';this.style.color='#475569'">Nosotros</a><a href="faq.html" style="color:#475569;font-size:.875rem;padding:.5rem .875rem;border-radius:.5rem;font-weight:500;transition:color .2s,background .2s" onmouseover="this.style.background='rgba(139,69,19,0.1)';this.style.color='#8B4513'" onmouseout="this.style.background='';this.style.color='#475569'">FAQ</a><a href="contact.html" class="btn btn-p" style="padding:.5rem 1.25rem;font-size:.875rem">Contacto</a>
+    </div>
+    <button id="hamburger" onclick="document.getElementById('m-nav').classList.toggle('open')"
+      style="display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:.5rem" aria-label="Menú">
+      <span style="display:block;width:22px;height:2px;background:#1e293b;border-radius:2px;transition:transform .3s"></span>
+      <span style="display:block;width:22px;height:2px;background:#1e293b;border-radius:2px;transition:opacity .3s"></span>
+      <span style="display:block;width:22px;height:2px;background:#1e293b;border-radius:2px;transition:transform .3s"></span>
+    </button>
+  </div>
+  <div id="m-nav">
+    <a href="index.html">Inicio</a><a href="services.html">Servicios</a><a href="gallery.html">Galería</a><a href="about.html">Nosotros</a><a href="faq.html">FAQ</a><a href="contact.html" style="background:#8B4513;color:#fff;text-align:center;border-radius:.625rem;padding:.875rem">Contacto</a>
+  </div>
+</nav>
+
+<section style="background:linear-gradient(135deg,rgba(139,69,19,0.1),#f8fafc);padding:5rem 0;border-bottom:1px solid #e8edf3">
+  <div class="wrap tc" style="max-width:680px">
+    <div class="badge">✦ Galería</div>
+    <h1 class="stitle">Nuestro trabajo</h1>
+    <p class="ssub">Una muestra de lo que hacemos.</p>
+  </div>
+</section>
+
+<section class="sec" style="background:#fff">
+  <div class="wrap">
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1rem">
+      
+      <div style="position:relative;border-radius:1rem;overflow:hidden;aspect-ratio:4/3;cursor:pointer" onclick="openLightbox('https://source.unsplash.com/800x600/?pan&sig=1','Pan fresco')">
+        <img src="https://source.unsplash.com/800x600/?pan&sig=1" alt="Pan fresco" loading="lazy" style="width:100%;height:100%;transition:transform .4s" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'">
+        <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.55),transparent 50%)">
+          <p style="position:absolute;bottom:.875rem;left:.875rem;right:.875rem;color:#fff;font-size:.875rem;font-weight:600">Pan fresco</p>
+        </div>
+      </div>
+      <div style="position:relative;border-radius:1rem;overflow:hidden;aspect-ratio:4/3;cursor:pointer" onclick="openLightbox('https://source.unsplash.com/800x600/?factura&sig=2','Galletitas')">
+        <img src="https://source.unsplash.com/800x600/?factura&sig=2" alt="Galletitas" loading="lazy" style="width:100%;height:100%;transition:transform .4s" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'">
+        <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.55),transparent 50%)">
+          <p style="position:absolute;bottom:.875rem;left:.875rem;right:.875rem;color:#fff;font-size:.875rem;font-weight:600">Galletitas</p>
+        </div>
+      </div>
+      <div style="position:relative;border-radius:1rem;overflow:hidden;aspect-ratio:4/3;cursor:pointer" onclick="openLightbox('https://source.unsplash.com/800x600/?torta&sig=3','Tortas y pasteles')">
+        <img src="https://source.unsplash.com/800x600/?torta&sig=3" alt="Tortas y pasteles" loading="lazy" style="width:100%;height:100%;transition:transform .4s" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'">
+        <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.55),transparent 50%)">
+          <p style="position:absolute;bottom:.875rem;left:.875rem;right:.875rem;color:#fff;font-size:.875rem;font-weight:600">Tortas y pasteles</p>
+        </div>
+      </div>
+      <div style="position:relative;border-radius:1rem;overflow:hidden;aspect-ratio:4/3;cursor:pointer" onclick="openLightbox('https://source.unsplash.com/800x600/?pastel&sig=4','Pasteleria')">
+        <img src="https://source.unsplash.com/800x600/?pastel&sig=4" alt="Pasteleria" loading="lazy" style="width:100%;height:100%;transition:transform .4s" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'">
+        <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.55),transparent 50%)">
+          <p style="position:absolute;bottom:.875rem;left:.875rem;right:.875rem;color:#fff;font-size:.875rem;font-weight:600">Pasteleria</p>
+        </div>
+      </div>
+      <div style="position:relative;border-radius:1rem;overflow:hidden;aspect-ratio:4/3;cursor:pointer" onclick="openLightbox('https://source.unsplash.com/800x600/?galletitas&sig=5','Entrega a domicilio')">
+        <img src="https://source.unsplash.com/800x600/?galletitas&sig=5" alt="Entrega a domicilio" loading="lazy" style="width:100%;height:100%;transition:transform .4s" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'">
+        <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.55),transparent 50%)">
+          <p style="position:absolute;bottom:.875rem;left:.875rem;right:.875rem;color:#fff;font-size:.875rem;font-weight:600">Entrega a domicilio</p>
+        </div>
+      </div>
+      <div style="position:relative;border-radius:1rem;overflow:hidden;aspect-ratio:4/3;cursor:pointer" onclick="openLightbox('https://source.unsplash.com/800x600/?panaderia&sig=6','Atención personalizada')">
+        <img src="https://source.unsplash.com/800x600/?panaderia&sig=6" alt="Atención personalizada" loading="lazy" style="width:100%;height:100%;transition:transform .4s" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'">
+        <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.55),transparent 50%)">
+          <p style="position:absolute;bottom:.875rem;left:.875rem;right:.875rem;color:#fff;font-size:.875rem;font-weight:600">Atención personalizada</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" onclick="closeLightbox()" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.92);z-index:1000;align-items:center;justify-content:center;padding:2rem">
+  <button onclick="closeLightbox()" style="position:absolute;top:1.5rem;right:1.5rem;background:rgba(255,255,255,.15);border:none;color:#fff;font-size:1.5rem;width:44px;height:44px;border-radius:50%;cursor:pointer">✕</button>
+  <img id="lb-img" src="" alt="" style="max-width:92vw;max-height:85vh;border-radius:1rem;object-fit:contain">
+  <p id="lb-cap" style="position:absolute;bottom:2rem;color:rgba(255,255,255,.8);font-size:.9rem;text-align:center;left:50%;transform:translateX(-50%);white-space:nowrap"></p>
+</div>
+<script>
+function openLightbox(src,cap){const lb=document.getElementById('lightbox');lb.style.display='flex';document.getElementById('lb-img').src=src;document.getElementById('lb-cap').textContent=cap;}
+function closeLightbox(){document.getElementById('lightbox').style.display='none';}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLightbox();});
+</script>
+
+<footer style="background:#0b1120;color:#94a3b8;padding:4.5rem 0 2rem">
+  <div class="wrap">
+    <div style="display:grid;grid-template-columns:2fr 1fr 1fr;gap:3rem;padding-bottom:3rem;border-bottom:1px solid rgba(255,255,255,.07)">
+      <div>
+        <p style="font-size:1.3rem;font-weight:800;color:#8B4513;margin-bottom:.875rem">Test Panaderia Don Jorge</p>
+        <p style="font-size:.9rem;line-height:1.75;max-width:300px;margin-bottom:1.5rem">Panaderia artesanal en Argentina</p>
+        <a href="https://wa.me/541155551234" class="btn" style="background:#25D366;color:#fff;padding:.625rem 1.25rem;font-size:.875rem">💬 WhatsApp</a>
+      </div>
+      <div>
+        <p style="font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#475569;margin-bottom:1rem">Páginas</p>
+        <a href="index.html" style="display:block;color:#94a3b8;font-size:.875rem;margin-bottom:.5rem;transition:color .2s" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#94a3b8'">Inicio</a><a href="services.html" style="display:block;color:#94a3b8;font-size:.875rem;margin-bottom:.5rem;transition:color .2s" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#94a3b8'">Servicios</a><a href="gallery.html" style="display:block;color:#94a3b8;font-size:.875rem;margin-bottom:.5rem;transition:color .2s" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#94a3b8'">Galería</a><a href="about.html" style="display:block;color:#94a3b8;font-size:.875rem;margin-bottom:.5rem;transition:color .2s" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#94a3b8'">Nosotros</a><a href="faq.html" style="display:block;color:#94a3b8;font-size:.875rem;margin-bottom:.5rem;transition:color .2s" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#94a3b8'">FAQ</a><a href="contact.html" style="display:block;color:#94a3b8;font-size:.875rem;margin-bottom:.5rem;transition:color .2s" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#94a3b8'">Contacto</a>
+      </div>
+      <div>
+        <p style="font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#475569;margin-bottom:1rem">Contacto</p>
+        <p style="font-size:.875rem;margin-bottom:.5rem">📞 +541155551234</p>
+        <p style="font-size:.875rem;margin-bottom:.5rem">✉️ test@automaticialab.com</p>
+        <p style="font-size:.875rem">📍 Av. Corrientes 1234, Buenos Aires</p>
+      </div>
+    </div>
+    <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;padding-top:1.5rem;font-size:.8rem">
+      <p>© 2026 Test Panaderia Don Jorge. Todos los derechos reservados.</p>
+      <p>Creado con IA por <a href="https://automaticialab.com" style="color:#8B4513">AUTOMATIC IA LAB</a></p>
+    </div>
+  </div>
+</footer>
+<script>
+// FAQ accordion
+document.querySelectorAll('.faq-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const item = btn.closest('.faq-item');
+    const wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    if (!wasOpen) item.classList.add('open');
+  });
+});
+</script></body></html>
